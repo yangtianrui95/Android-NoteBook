@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!-- 引入Toolbar-->
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar_main" />
+    <!-- 主界面 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_dl_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_toolbar">
+
+        <FrameLayout
+            android:id="@+id/id_fl_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/id_lv_navi"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#dddddd"
+            android:divider="@color/navi_divider"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

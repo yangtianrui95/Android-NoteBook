@@ -1,7 +1,7 @@
 # Android NoteBook
 ## 一个入门级的Android项目，欢迎新手学习
 
-## 关键技术
+## 你将学会
 
 #### 1.CursorLoader和CursorAdapter实现异步加载数据
 #### 2.Toolbar的使用
